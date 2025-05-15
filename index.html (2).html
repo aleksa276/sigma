@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sigma academy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header Section */
+    .header {
+      padding: 80px 0;
+      text-align: center;
+      background-color:#FF4C4C;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 60px;
+      font-weight: bold;
+    }
+    .header p {
+      font-size: 22px;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    /* Navigation Menu */
+    .navigacija {
+      background-color: #FF4C4C;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .navigacija ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navigacija li {
+      display: inline-block;
+    }
+    .navigacija a {
+      color:#fff;
+      text-decoration: none;
+      padding: 0 30px;
+      line-height: 40px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    .navigacija a:hover {
+      color: #00bfff;
+    }
+
+    /* Section Styles */
+    .section {
+      display: none;
+      padding: 50px 20px;
+      margin: 0 auto;
+      max-width: 900px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .section h2 {
+      font-size: 36px;
+      color:#black;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #666;
+    }
+    .section ul {
+      font-size: 18px;
+      color:#666;
+    }
+    .active {
+      display: block;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #FF4C4C;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Sigma academy</h1>
+    <p>Razvoj sigma talenata širom sveta</p>
+  </div>
+
+  <nav class="navigacija">
+    <ul>
+      <li><a href="javascript:void(0);" onclick="showSection('home')">Početna</a></li>
+      <li><a href="javascript:void(0);" onclick="showSection('about')">O nama</a></li>
+      <li><a href="javascript:void(0);" onclick="showSection('services')">Usluge</a></li>
+      <li><a href="javascript:void(0);" onclick="showSection('contact')">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <div class="section" id="home">
+    <h2>Početna</h2>
+    <p>Sigma Academy je savremena edukativna platforma namenjena svima koji žele da steknu praktična znanja, usavrše veštine i naprave iskorak u svojoj karijeri. Naša misija je da kroz kvalitetnu nastavu, stručne predavače i primenjivo znanje omogućimo svakom polazniku da ostvari svoj puni potencijal. </p>
+  </div>
+
+  <!-- About Section -->
+  <div class="section" id="about">
+    <h2>O nama</h2>
+    <p>Sigma Academy je obrazovna platforma posvećena pružanju savremenih znanja i veština koje odgovaraju potrebama tržišta rada. Osnovani smo sa jasnim ciljem – da omogućimo svima, bez obzira na predznanje, da steknu praktično, primenljivo i kvalitetno obrazovanje u oblastima sa visokim potencijalom zapošljavanja i ličnog razvoja.
+
+Naša akademija okuplja tim iskusnih predavača i stručnjaka iz različitih oblasti – od programiranja i dizajna, do digitalnog marketinga, biznisa i ličnog razvoja. Verujemo da znanje treba da bude dostupno, relevantno i odmah primenjivo. Zbog toga su naši kursevi pažljivo kreirani kako bi kombinovali teoriju i praksu, uz stalnu podršku mentora.</p>
+    <p>Da inspirišemo, obrazujemo i osnažimo pojedince da kroz znanje izgrade uspešne karijere i ostvare svoje ciljeve.</p>
+  </div>
+
+  <!-- Services Section -->
+  <div class="section" id="services">
+    <h2>Usluge</h2>
+    <p>U Sigma Academy verujemo da znanje mora biti dostupno, primenljivo i usmereno ka konkretnim rezultatima. Zato nudimo širok spektar usluga koje su pažljivo osmišljene da zadovolje potrebe modernog tržišta rada i ličnog razvoja.:</p>
+    <ul>
+      <li><strong>Kursevi i obuke:</strong> IT kursevi,Digitalni marketing ,Dizajn,Poslovne veštine,Softverske obuke.</li>
+      <li><strong>Online i uživo predavanja:</strong>Nastavu organizujemo fleksibilno – u učionici ili putem modernih online platformi, uz snimke predavanja i materijale za samostalno učenje.</li>
+      <li><strong> Sertifikacija:</strong> Svi naši polaznici po završetku kursa dobijaju sertifikat koji potvrđuje stečeno znanje i veštine, koristan za CV i zapošljavanje.</li>
+      <li><strong> Mentorska podrška:</strong> Naš tim mentora pruža individualnu podršku tokom trajanja kursa – kroz konsultacije, zadatke i povratne informacije.</li>
+      <li><strong> Karijerna podrška:</strong> Pomažemo polaznicima u izradi CV-ja, pripremi za intervju i povezivanju sa potencijalnim poslodavcima kroz partnerske kompanije.</li>
+    </ul>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section" id="contact">
+    <h2>Kontakt</h2>
+    <p>Za više informacija ili da se konsultujete sa našim timom, možete nas kontaktirati putem sledećih kanala:</p>
+    <p>📧 Email: <a href="mailto:kontakt@ronaldomgmt.com">kontakt@dagestan.com</a><br>
+       📞 Telefon: +381 812 123<br>
+       🌍 Lokacija: Dagestan, Rusija</p>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Sigama Academy ima sva prava zadržana.</p>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      // Sakriva sve sekcije
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Prikazuje selektovanu sekciju
+      const activeSection = document.getElementById(sectionId);
+      if (activeSection) {
+        activeSection.classList.add('active');
+      }
+    }
+
+    // Prikazuje početnu sekciju kada se stranica učita
+    window.onload = function() {
+      showSection('home');
+    }
+  </script>
+
+</body>
+</html>
